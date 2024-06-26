@@ -13,20 +13,23 @@ body {
 }
 
 .header-container {
-    background-color: #4CAF50;
+    background-color: #ff6f61;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 .header-container h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .main-container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -35,27 +38,30 @@ body {
 
 .message-container {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #ffefeb;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .message-container h2 {
-    color: #4CAF50;
-    font-size: 1.8rem;
+    color: #ff6f61;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .message-container p {
     margin-bottom: 15px;
     text-align: justify;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .footer-container {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #ff6f61;
     color: white;
     position: fixed;
     bottom: 0;
@@ -67,7 +73,7 @@ body {
 .slideshow-container {
     margin-top: 20px;
     text-align: center;
-    background-color: #e0e0e0;
+    background-color: #feeae6;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -96,7 +102,7 @@ body {
 .interactive-section {
     margin-top: 20px;
     text-align: center;
-    background-color: #fff3e0;
+    background-color: #fff7e8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -111,10 +117,12 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 #submitWish {
-    background-color: #4CAF50;
+    background-color: #ff6f61;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -125,11 +133,12 @@ body {
 }
 
 #submitWish:hover {
-    background-color: #45a049;
+    background-color: #ff554b;
 }
 
 #confirmationMessage {
     margin-top: 10px;
     font-style: italic;
-    color: #666;
+    color: #777;
+    font-size: 0.9rem;
 }
