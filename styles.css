@@ -13,11 +13,11 @@ body {
 }
 
 .header-container {
-    background-color: #ff6f61;
-    color: white;
+    background-color: #ffcccb;
+    color: #ff6f61;
     text-align: center;
     padding: 20px 0;
-    animation: slideInDown 1s ease-out;
+    animation: fadeInDown 1s ease-out;
 }
 
 .header-container h1 {
@@ -30,11 +30,11 @@ body {
 .main-container {
     max-width: 95%;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #fff7e8;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    animation: slideInUp 1s ease-out;
+    animation: fadeInUp 1s ease-out;
 }
 
 .message-container {
@@ -63,12 +63,12 @@ body {
 .footer-container {
     text-align: center;
     padding: 10px;
-    background-color: #ff6f61;
-    color: white;
+    background-color: #ffcccb;
+    color: #ff6f61;
     position: fixed;
     bottom: 0;
     width: 100%;
-    animation: slideInUp 1s ease-out;
+    animation: fadeInUp 1s ease-out;
 }
 
 /* Slideshow styles */
@@ -92,7 +92,8 @@ body {
 }
 
 .slideshow img {
-    width: 100%;
+    width: auto;
+    max-height: 300px; /* Adjust height to keep it small */
     display: none;
 }
 
@@ -176,5 +177,60 @@ body {
 
     .footer-container {
         font-size: 0.8rem;
+    }
+}
+
+/* Keyframe animations */
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
