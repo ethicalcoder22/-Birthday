@@ -56,12 +56,35 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    animation: fadeIn 1s ease-in-out;
 }
 
-/* Animations */
+/* Slideshow styles */
 
-@keyframes fadeIn {
+.slideshow-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow img:first-child {
+    display: block;
+    animation: fadeInImage 1.5s ease-in-out;
+}
+
+/* Animation for slideshow */
+@keyframes fadeInImage {
     from {
         opacity: 0;
     }
