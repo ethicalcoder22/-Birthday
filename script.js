@@ -1,19 +1,37 @@
-// Example JavaScript for animations or interactive elements
+// JavaScript for animations and interactivity
 document.addEventListener('DOMContentLoaded', function() {
-    animateGreetings();
-});
+    // Slideshow functionality
+    const images = document.querySelectorAll('.slideshow img');
+    let currentImageIndex = 0;
 
-function animateGreetings() {
-    const greetings = [
-        "Happy Birthday, Divya!",
-        "Wishing you a wonderful day!",
-        "Let's celebrate!",
-        "Cheers to our friendship!"
-    ];
-
-    let index = 0;
     setInterval(function() {
-        document.querySelector('h1').textContent = greetings[index];
-        index = (index + 1) % greetings.length;
-    }, 3000); // Change greeting every 3 seconds
-}
+        images[currentImageIndex].style.display = 'none';
+        images[currentImageIndex].classList.remove('fade-in');
+
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+
+        images[currentImageIndex].style.display = 'block';
+        images[currentImageIndex].classList.add('fade-in');
+    }, 5000);
+
+    // Interactive birthday wishes
+    const submitWishButton = document.getElementById('submitWish');
+    const birthdayWishesInput = document.getElementById('birthdayWishes');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+
+    submitWishButton.addEventListener('click', function() {
+        const wish = birthdayWishesInput.value.trim();
+
+        if (wish !== '') {
+            confirmationMessage.textContent = 'Your wish has been sent!';
+            birthdayWishesInput.value = '';
+        } else {
+            confirmationMessage.textContent = 'Please write a wish before sending.';
+        }
+
+        // Clear confirmation message after 3 seconds
+        setTimeout(function() {
+            confirmationMessage.textContent = '';
+        }, 3000);
+    });
+});
