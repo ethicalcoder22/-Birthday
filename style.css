@@ -83,12 +83,44 @@ body {
     animation: fadeInImage 1.5s ease-in-out;
 }
 
-/* Animation for slideshow */
-@keyframes fadeInImage {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Interactive section styles */
+
+.interactive-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.interactive-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#birthdayWishes {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#submitWish {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#submitWish:hover {
+    background-color: #45a049;
+}
+
+#confirmationMessage {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
 }
