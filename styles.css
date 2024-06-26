@@ -1,0 +1,135 @@
+/* Reset and base styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.header-container {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.message-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.message-container h2 {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.message-container p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Slideshow styles */
+
+.slideshow-container {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow img:first-child {
+    display: block;
+    animation: fadeInImage 1.5s ease-in-out;
+}
+
+/* Interactive section styles */
+
+.interactive-section {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-container {
+    padding: 20px;
+}
+
+#birthdayWishes {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#submitWish {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#submitWish:hover {
+    background-color: #45a049;
+}
+
+#confirmationMessage {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
