@@ -1,59 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
     padding: 20px;
-    margin: 20px 0;
-    background: #fff;
-    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-section h2 {
-    font-size: 2em;
-    color: #333;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-section p {
-    font-size: 1.2em;
-    color: #666;
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.message {
+    line-height: 1.6;
+    text-align: justify;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
 }
